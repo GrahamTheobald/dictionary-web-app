@@ -1,0 +1,22 @@
+.search {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-block: 2rem;
+	padding: 1rem;
+	background-color: var(--searchBG);
+	border-radius: 1rem;
+}
+.search:focus-within {
+	outline: 2px solid var(--purple);
+}
+
+.search__input {
+	background-color: inherit;
+	border: none;
+	font-size: 1rem;
+	outline: none;
+	font-family: inherit;
+	width: 100%;
+	caret-color: var(--purple);
+}

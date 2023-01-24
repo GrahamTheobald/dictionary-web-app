@@ -1,0 +1,30 @@
+.switch {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-left: 1rem;
+	--height: 1rem;
+	--width: 2rem;
+	--bg: var(--grey4);
+	--tog: var(--white);
+}
+
+.switch__track {
+	display: flex;
+	align-items: center;
+	height: var(--height);
+	width: var(--width);
+	background-color: var(--bg);
+	border-radius: 999px;
+	padding: 2px;
+}
+.dark .switch__track {
+	justify-content: flex-end;
+}
+
+.switch__toggle {
+	height: calc(var(--height) - 4px);
+	width: calc(var(--height) - 4px);
+	background-color: var(--tog);
+	border-radius: 50%;
+}

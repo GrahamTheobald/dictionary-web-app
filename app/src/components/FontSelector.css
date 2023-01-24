@@ -1,0 +1,30 @@
+.fonts {
+	position: relative;
+}
+
+.fonts__active {
+	padding-right: 1rem;
+	border-right: 1px solid var(--grey6);
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.fonts__list {
+	display: none;
+}
+.fonts__list.open {
+	--shadow: var(--grey6);
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	position: absolute;
+	top: calc(100% + 1rem);
+	right: 0;
+	padding: 1rem;
+	width: 10rem;
+	list-style: none;
+	box-shadow: 0px 3px 15px 5px var(--shadow);
+	border-radius: 1rem;
+	background-color: var(--background);
+}

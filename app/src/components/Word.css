@@ -1,0 +1,109 @@
+.info__meaning {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.info {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.info__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.header__word {
+	font-size: 4rem;
+}
+.header__phonetics {
+	font-size: 1.2rem;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+}
+.header__phonetic {
+	color: var(--purple);
+}
+
+.meaning__header {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding-bottom: 1rem;
+}
+.meaning__title {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.meaning__title.Sans-Serif {
+	font-style: italic;
+}
+.meaning__line {
+	width: 100%;
+	border-bottom: 1px solid var(--borders);
+}
+.meaning__meaning,
+.nym__title {
+	font-size: 1.2rem;
+	color: var(--subText);
+}
+
+.definition__list {
+	position: relative;
+	margin-left: 2rem;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.definition__def::before {
+	position: absolute;
+	left: -0.5rem;
+	content: '•';
+	color: var(--purple);
+}
+.definition__def {
+	padding-left: 0.5rem;
+}
+.definition__example {
+	/* padding-left: 2.5rem; */
+	padding-top: 1rem;
+	color: var(--subText);
+}
+.definition__nym {
+	display: flex;
+	gap: 1rem;
+	align-items: flex-start;
+	margin-top: 2rem;
+}
+.nym__list {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+.nym__nym {
+	font-weight: bold;
+	color: var(--purple);
+	font-size: 1.2rem;
+}
+
+.meaning__source {
+	display: flex;
+	gap: 1rem;
+	font-size: 0.8rem;
+	padding-top: 1.5rem;
+	border-top: 1px solid var(--borders);
+}
+.meaning__source p {
+	text-decoration: underline;
+}
+.source__title {
+	color: var(--subText);
+}
+.source__url {
+	display: flex;
+	gap: 1rem;
+}

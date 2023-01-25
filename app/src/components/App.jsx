@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import useFetchWord from '../hooks/useFetchWord'
 import NavBar from './NavBar'
 import SearchBar from './SearchBar'
+import Word from './Word'
 
 export const FONTS = {
 	SERIF: 'Serif',
@@ -46,6 +47,7 @@ function App() {
 		<div className='App'>
 			<NavBar activeFont={activeFont} />
 			<SearchBar handler={handleSetWord} />
+			{data && <Word data={data} />}
 		</div>
 	)
 }

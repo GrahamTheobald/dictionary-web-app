@@ -10,6 +10,20 @@
 .search:focus-within {
 	outline: 2px solid var(--purple);
 }
+.search.empty {
+	position: relative;
+	outline: 2px solid var(--melon);
+}
+.search.empty::after {
+	position: absolute;
+	content: "Whoops, can't be empty...";
+	top: calc(100% + 0.5rem);
+	left: 0;
+	color: var(--melon);
+}
+.search img:hover {
+	cursor: pointer;
+}
 
 .search__input {
 	background-color: inherit;

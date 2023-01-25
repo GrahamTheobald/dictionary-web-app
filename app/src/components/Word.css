@@ -16,6 +16,7 @@
 
 .header__word {
 	font-size: 4rem;
+	margin-bottom: 0.5rem;
 }
 .header__phonetics {
 	font-size: 1.2rem;
@@ -26,6 +27,13 @@
 }
 .header__phonetic {
 	color: var(--purple);
+}
+.header__phonetic:hover {
+	cursor: pointer;
+}
+.header__audio:hover {
+	cursor: pointer;
+	filter: brightness(110%);
 }
 
 .meaning__header {
@@ -38,7 +46,7 @@
 	font-size: 1.5rem;
 	font-weight: bold;
 }
-.meaning__title.Sans-Serif {
+.Sans-Serif .meaning__title {
 	font-style: italic;
 }
 .meaning__line {
@@ -69,7 +77,6 @@
 	padding-left: 0.5rem;
 }
 .definition__example {
-	/* padding-left: 2.5rem; */
 	padding-top: 1rem;
 	color: var(--subText);
 }
@@ -89,6 +96,9 @@
 	color: var(--purple);
 	font-size: 1.2rem;
 }
+.nym__nym:hover {
+	cursor: pointer;
+}
 
 .meaning__source {
 	display: flex;
@@ -106,4 +116,17 @@
 .source__url {
 	display: flex;
 	gap: 1rem;
+	color: inherit;
+}
+.source__url:hover {
+	cursor: pointer;
+}
+
+@media (max-width: 450px) {
+	.definition__list {
+		margin-left: 0.5rem;
+	}
+	.meaning__source {
+		flex-direction: column;
+	}
 }

@@ -18,8 +18,12 @@
 	border-radius: 999px;
 	padding: 2px;
 }
+.switch__track:hover {
+	cursor: pointer;
+}
 .dark .switch__track {
 	justify-content: flex-end;
+	background-color: var(--purple);
 }
 
 .switch__toggle {

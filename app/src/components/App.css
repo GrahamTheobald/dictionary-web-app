@@ -1,0 +1,32 @@
+.App {
+	max-width: 768px;
+	margin: auto;
+	padding: 2rem 1rem;
+	color: var(--text);
+}
+
+.container {
+	background-color: var(--background);
+	min-height: 100vh;
+}
+
+@media (max-width: 450px) {
+	.App {
+		padding: 1rem;
+	}
+}
+
+.void {
+	text-align: center;
+	padding-top: 4rem;
+}
+.void__title {
+	font-size: 5rem;
+}
+.void__subtitle {
+	margin: 1rem 0;
+	font-weight: bold;
+}
+.void__copy {
+	color: var(--subText);
+}

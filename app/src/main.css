@@ -61,7 +61,7 @@
 
 .dark {
 	--text: var(--white);
-	--subText: var(--grey3);
+	--subText: var(--grey4);
 	--background: var(--black);
 	--searchBG: var(--grey2);
 	--borders: var(--grey2);
@@ -75,10 +75,4 @@
 }
 .Mono {
 	font-family: 'inconsolata', monospace;
-}
-
-.App {
-	max-width: 768px;
-	margin: auto;
-	padding: 2rem 1rem;
 }

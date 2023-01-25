@@ -17,7 +17,9 @@ function App() {
 	const [data, setData] = useState()
 	const [error, setError] = useState()
 	const [loading, setLoading] = useState()
-	const [dark, setDark] = useState(false)
+	const [dark, setDark] = useState(
+		window.matchMedia('(prefers-color-scheme: dark)').matches
+	)
 
 	const {
 		data: fetchData,

@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect, useCallback } from 'react'
 import chevron from '../assets/images/icon-arrow-down.svg'
 import './FontSelector.css'
 
 export default function FontSelector({ activeFont, handleSetFont }) {
 	const [listOpen, setListOpen] = useState(false)
+	const listRef = useRef(null)
+
 	let listClass = 'fonts__list'
 	listClass += listOpen ? ' open' : ''
 	return (

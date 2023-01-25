@@ -30,6 +30,7 @@
 	list-style: none;
 	box-shadow: 0px 3px 10px 5px var(--shadow);
 	border-radius: 1rem;
+	z-index: 1;
 	background-color: var(--background);
 }
 .dark .fonts__list.open {
